@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PeakRail Train Scheduler</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:300" rel="stylesheet">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">PeakRail</h1>
+      <p class="lead">Up-to-the-minute Rail Schedule for the Rocky Mountain region</p>
+    </div>
+  </div>
+  <div class="container">
+  <div class="card mb-4">
+    <div class="card-header">
+      Current Train Schedule
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency (min)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody id=”tableBody”>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      Add Train
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-row align-items-left">
+          <div class="form-group col-md-6">
+            <label for="trainName">Train Name</label>
+            <input type="text" class="form-control" id="trainName">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="destination">Destination</label>
+            <input type="text" class="form-control" id="destination">
+          </div>
+        </div>
+        <div class="form-row align-items-left">
+          <div class="form-group col-md-3">
+            <label for="firstTrain">First Train (HH:mm)</label>
+            <select class="custom-select" id="hours">
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <select class="custom-select" id="minutes">
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="frequency">Frequency (min)</label>
+            <input type="text" class="form-control" id="frequency">
+          </div>
+        </div>
+          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!--Custom javascript -->
+  <script src="assets/javascript/app.js" charset="utf-8"></script>
+</body>
+
+</html>
