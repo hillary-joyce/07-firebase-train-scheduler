@@ -3,20 +3,23 @@
 
 <head>
   <meta charset="utf-8">
+
   <title>PeakRail Train Scheduler</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway:300,500" rel="stylesheet">
   <!-- custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-4">PeakRail</h1>
-      <p class="lead">Up-to-the-minute Rail Schedule for the Rocky Mountain region</p>
+
+  <div class="currentTime">Time: <span id="currentTime"></span></div>
+  <div class="jumbotron pt-2">
+    <div class="container-fluid">
+      <h1 class="display-3 mb-0">PeakRail</h1>
+      <p class="lead mt-0">Mountain Train Schedule</p>
     </div>
   </div>
   <div class="container">
@@ -71,7 +74,7 @@
             <input type="text" class="form-control" id="frequency">
           </div>
         </div>
-          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+          <button type="submit" class="btn btn-primary" id="submit">ADD TRAIN</button>
       </form>
       </div>
     </div>

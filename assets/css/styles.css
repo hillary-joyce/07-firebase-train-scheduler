@@ -1,11 +1,60 @@
+/************ Aligns the minutes with hours (since it has no label) ***************/
 #minutes {
   margin-top: 2rem;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-image: url("../images/topography.png")
 }
 
-h1, .card-header {
+h1 {
   font-family: 'Playfair Display', serif;
+  color: #5e665b;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  background: #bac7b7;
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron {
+  background-image: url("../images/jumbotron-photo.jpg");
+  background-size: cover;
+  border-bottom: 1px solid #838c81;
+}
+
+.btn-primary {
+  background: #838c81;
+  width: 100%;
+  border: none;
+  border-right: 2px solid #5e665b;
+  border-bottom: 2px solid #5e665b;
+}
+
+.btn-primary:hover{
+  background: #798277;
+  border-right: 2px solid #5e665b;
+  border-bottom: 2px solid #5e665b;
+}
+
+/************** Current Time Display ***********/
+.currentTime {
+  position: fixed;
+  padding:
+  top: 0;
+  right: 5px;
+  height: 35px;
+  width: 100px;
+  background: #838c81;
+  color: white;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 5px;
+
 }
